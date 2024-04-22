@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SullivanWebdesign
+                    LLC</span>
+            </a>
+            <button id="navbar-toggler" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 dark:focus:ring-gray-600"
+                aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                        <a href="/home"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- About Me Section -->
+    <section class="container mx-auto bg-white rounded-lg shadow-lg p-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            <!-- Profile Image -->
+            <div class="md:col-span-4 text-center md:text-left">
+                <img class="w-48 h-48 rounded-full mx-auto md:mx-0" src="../img/profImg.png"
+                    alt="Profile Photo">
+            </div>
+            <!-- Bio & Skills -->
+            <div class="md:col-span-8">
+                <h1 class="text-3xl font-bold">Jane Doe</h1>
+                <p class="text-gray-600 mt-4">
+                    Hi there! I'm Matt, a web developer with five years under my belt. I love turning ideas into
+                    great-looking, fully functional websites that help people connect with their customers.
+
+                    My work involves using straightforward tools like HTML, CSS, and JavaScript to build websites that
+                    not only look good but are easy to use, too. I have experience with some neat tools that help me
+                    make websites that work well on both phones and computers.
+
+                    I believe in keeping things simple and practical. Whether you need a brand-new website or want to
+                    spruce up your existing one, I’m here to help. I pride myself on clear communication and a no-fuss
+                    approach to web development.
+
+                    Interested in working together? Reach out, and let’s build something that works for you!
+                </p>
+                <!-- Skills -->
+                <div class="mt-6">
+                    <h2 class="text-2xl font-semibold">Skills</h2>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-2 mt-2">
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">HTML/CSS</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Wordpress.js</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Hosting</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Web Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-8">Contact Me</h2>
+            <p class="text-lg lg:text-xl mb-8">Ready to get started? Reach out today!</p>
+            <a href="#"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full inline-block">Contact
+                Now</a>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto text-center text-white">
+            <p>&copy; 2024 SullivanWebdesign LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.getElementById('navbar-toggler').addEventListener('click', function () {
+            const menu = document.getElementById('navbar-default');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

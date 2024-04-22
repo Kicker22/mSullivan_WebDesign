@@ -1,0 +1,25 @@
+{
+  "name": "sullivanwebdesign",
+  "version": "1.0.0",
+  "description": "Company site for SullivanWebdesign",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "web",
+    "webdesign",
+    "design",
+    "sullivan",
+    "website",
+    "design"
+  ],
+  "author": "Matt Sullivan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "path": "^0.12.7"
+  }
+}

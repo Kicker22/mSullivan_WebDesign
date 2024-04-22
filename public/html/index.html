@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SullivanWebdesign LLC</title>
+    <!-- FOnt awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Add your custom styles -->
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+   <!-- Navigation -->
+   <nav class="bg-gray-900 border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SullivanWebdesign LLC</span>
+        </a>
+        <button id="navbar-toggler" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 dark:focus:ring-gray-600"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                <li>
+                    <a href="/home" class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Home</a>
+                </li>
+                <li>
+                    <a href="/about" class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">About</a>
+                </li>
+                <li>
+                    <a href="/services" class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Services</a>
+                </li>
+                <li>
+                    <a href="/pricing" class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Pricing</a>
+                </li>
+                <li>
+                    <a href="/contact" class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+
+ 
+
+    <!-- Hero section -->
+    <section class="py-16 landing_banner text-white relative">
+        <div class="overlay"></div> <!-- Overlay element -->
+        <div class="container mx-auto text-center z-10"> <!-- Ensure container is above overlay -->
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4">Empowering Blue-Collar Professionals Online</h1>
+            <p class="text-lg lg:text-xl mb-8">Crafting websites for the hardworking individuals who keep America
+                running.</p>
+            <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full">Learn
+                More</a>
+        </div>
+    </section>
+
+
+    <!-- Services section -->
+    <section id="services" class="py-16 bg-gray-800 container">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <i class="fas fa-laptop-code fa-3x mb-4 text-white"></i> <!-- Icon for Web Design -->
+                    <h3 class="text-2xl lg:text-3xl font-semibold mb-4">Web Design</h3>
+                    <p class="text-lg lg:text-xl">Crafting visually appealing and user-friendly websites tailored to
+                        your business needs.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <i class="fas fa-palette fa-3x mb-4 text-white"></i> <!-- Icon for Branding -->
+                    <h3 class="text-2xl lg:text-3xl font-semibold mb-4">Branding</h3>
+                    <p class="text-lg lg:text-xl">Creating unique and memorable brand identities that resonate with your
+                        audience.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <i class="fas fa-search-dollar fa-3x mb-4 text-white"></i> <!-- Icon for SEO Optimization -->
+                    <h3 class="text-2xl lg:text-3xl font-semibold mb-4">SEO Optimization</h3>
+                    <p class="text-lg lg:text-xl">Improving your online visibility and ranking on search engines to
+                        attract more customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact section -->
+    <section id="contact" class="py-16 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg lg:text-xl mb-8">Ready to get started? Reach out to us today!</p>
+            <a href="#"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full inline-block">Contact
+                Now</a>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 SullivanWebdesign LLC. All rights reserved.</p>
+        </div>
+    </footer>
+ <!-- JavaScript for mobile menu toggle -->
+ <script>
+    document.getElementById('navbar-toggler').addEventListener('click', function () {
+        const menu = document.getElementById('navbar-default');
+        menu.classList.toggle('hidden');
+    });
+</script>
+</body>
+
+</html>

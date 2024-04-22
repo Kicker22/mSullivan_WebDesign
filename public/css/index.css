@@ -1,0 +1,21 @@
+.landing_banner {
+    position: relative; /* This makes sure all children are positioned relative to this section */
+    background-image: url('../img/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute; /* Positions overlay relative to the nearest positioned ancestor (landing_banner) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensures the overlay is above the background image but below the text */
+}
+
+.container {
+    position: relative; /* This ensures that the text and button are positioned above the overlay */
+    z-index: 2; /* Higher than the overlay's z-index to keep text on top */
+}
