@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("CIlxe2bhMnHm6Rnal"); // Replace with your EmailJS user ID
+        })();
+    </script>
 </head>
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
@@ -14,12 +20,11 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SullivanWebdesign
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SullivanWebDesign
                     LLC</span>
             </a>
             <button id="navbar-toggler" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 dark:focus:ring-gray-600"
-                aria-expanded="false">
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -27,24 +32,19 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                    <li>
-                        <a href="/home"
+                    <li><a href="/home"
                             class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Home</a>
                     </li>
-                    <li>
-                        <a href="/about"
+                    <li><a href="/about"
                             class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">About</a>
                     </li>
-                    <li>
-                        <a href="#"
+                    <li><a href="#"
                             class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Services</a>
                     </li>
-                    <li>
-                        <a href="#"
+                    <li><a href="#"
                             class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Pricing</a>
                     </li>
-                    <li>
-                        <a href="#"
+                    <li><a href="#"
                             class="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0">Contact</a>
                     </li>
                 </ul>
@@ -56,12 +56,11 @@
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <!-- Profile Image -->
             <div class="md:col-span-4 text-center md:text-left">
-                <img class="w-48 h-48 rounded-full mx-auto md:mx-0" src="../img/profImg.png"
-                    alt="Profile Photo">
+                <img class="w-48 h-48 rounded-full mx-auto md:mx-0" src="../img/profImg.png" alt="Profile Photo">
             </div>
             <!-- Bio & Skills -->
             <div class="md:col-span-8">
-                <h1 class="text-3xl font-bold">Jane Doe</h1>
+                <h1 class="text-3xl font-bold">About the CEO</h1>
                 <p class="text-gray-600 mt-4">
                     Hi there! I'm Matt, a web developer with five years under my belt. I love turning ideas into
                     great-looking, fully functional websites that help people connect with their customers.
@@ -84,9 +83,11 @@
                         <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">JavaScript</span>
                         <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">React</span>
                         <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Node.js</span>
-                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Wordpress.js</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">WordPress</span>
                         <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Hosting</span>
                         <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Web Design</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">SEO</span>
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm">Shopify</span>
                     </div>
                 </div>
             </div>
@@ -97,11 +98,41 @@
         <div class="container mx-auto text-center">
             <h2 class="text-3xl lg:text-4xl font-bold mb-8">Contact Me</h2>
             <p class="text-lg lg:text-xl mb-8">Ready to get started? Reach out today!</p>
-            <a href="#"
+            <button onclick="openModal(true)"
                 class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full inline-block">Contact
-                Now</a>
+                Now</button>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center"
+        style="z-index: 50;">
+        <div class="bg-white text-black rounded-lg p-8">
+            <h3 class="text-xl font-bold mb-4">Contact Form</h3>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
+                    <input type="text" id="name" name="name" required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit"
+                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                </div>
+            </form>
+
+        </div>
+    </div>
 
     <!-- Footer section -->
     <footer class="bg-gray-800 py-8">
@@ -110,14 +141,35 @@
         </div>
     </footer>
 
-    <!-- JavaScript for mobile menu toggle -->
+    <!-- JavaScript for mobile menu toggle and form submission -->
     <script>
         document.getElementById('navbar-toggler').addEventListener('click', function () {
             const menu = document.getElementById('navbar-default');
             menu.classList.toggle('hidden');
         });
-    </script>
 
+        function openModal(isOpen) {
+            const modal = document.getElementById('contactModal');
+            if (isOpen) {
+                modal.classList.remove('hidden');
+            } else {
+                modal.classList.add('hidden');
+            }
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_6zvkn99', 'template_9f10zko', this)
+                .then(function () {
+                    alert('Thank you for contacting us. We will get back to you soon.');
+                    openModal(false);
+                }, function (error) {
+                    console.error('Error sending message:', error);
+                    alert('Error sending message. Please try again later.');
+                });
+        });
+    </script>
 </body>
 
 </html>
